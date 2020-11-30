@@ -14,6 +14,7 @@ jobs:
         with: 
              repository: bkmgit/nairobilug.or.ke
              submodules: recursive
+             ref: master
       - name: Build site
         shell: bash
         run: |
@@ -31,8 +32,13 @@ jobs:
           ls
           mv output ../
           ls
-          git branch -a
-          git checkout gh-pages
+      - name: Checkout gh-pages
+        uses: actions/checkout@v2
+        with:
+             ref: gh-pages
+      - name: Upload site
+        shell: bash
+        run: |
           ls
           cd ..
           ls
