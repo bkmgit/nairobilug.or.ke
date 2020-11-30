@@ -28,7 +28,10 @@ jobs:
           ls
           pydoc modules
           make html
+          ls
           mv output ../
+          ls
+          git branch -a
           git checkout gh-pages
           ls
           cd ..
