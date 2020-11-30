@@ -24,6 +24,7 @@ jobs:
           sudo apt-get install ghp-import
           sudo apt-get install pelican
           sudo apt-get install python3-bs4
+          cd nairobilug.or.ke
           make html
           mv output ../
           git checkout gh-pages
