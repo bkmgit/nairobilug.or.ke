@@ -18,9 +18,9 @@ jobs:
         shell: bash
         run: |
           sudo apt-get install python3-bs4
-          pip3 install -r markdown
-          pip3 install -r ghp-import
-          pip3 install -r pelican
+          pip3 install markdown
+          pip3 install ghp-import
+          pip3 install pelican==3.7.1
           make html
       - name: Commit generated webpage files
         run: |
