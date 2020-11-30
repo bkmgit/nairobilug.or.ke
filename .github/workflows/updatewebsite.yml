@@ -21,8 +21,8 @@ jobs:
           sudo apt-get install python3-setuptools
           sudo apt-get install python3-blinker
           sudo apt-get install python3-markdown
-          sudo apt-get install pelican
           sudo apt-get install ghp-import
+          pip3 install pelican==3.7.1
           pip3 install bs4
           make html
       - name: Commit generated webpage files
