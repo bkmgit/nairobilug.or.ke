@@ -4,4 +4,4 @@ __pycache__/
 *$py.class
 
 # Pelican output directory
-output/
+#output/
