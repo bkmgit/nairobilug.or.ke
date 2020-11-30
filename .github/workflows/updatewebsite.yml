@@ -30,7 +30,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git status
-          git add output
+          git add -f output
           git checkout gh-pages
           git checkout master -- output
           git add *.*
