@@ -24,11 +24,13 @@ jobs:
           sudo apt-get install ghp-import
           sudo apt-get install pelican
           sudo apt-get install python3-bs4
-          cd nairobilug.or.ke
+          ls
           make html
           mv output ../
           git checkout gh-pages
+          ls
           cd ..
+          ls
           cp -r output/* nairobilug.or.ke
           rm -rf output
           cd nairobilug.or.ke
