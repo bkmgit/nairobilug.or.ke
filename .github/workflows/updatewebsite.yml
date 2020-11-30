@@ -17,7 +17,7 @@ jobs:
       - name: Build site
         shell: bash
         run: |
-          pip install -r requirements.txt
+          pip3 install -r requirements.txt
           make html
       - name: Commit generated webpage files
         run: |
