@@ -20,9 +20,10 @@ jobs:
           sudo apt-get install build-essential
           sudo apt-get install python3-setuptools
           sudo apt-get install python3-bs4
-          pip3 install markdown
-          pip3 install ghp-import
-          pip3 install pelican
+          sudo apt-get install python3-blinker
+          sudo apt-get install python3-markdown
+          sudo apt-get install pelican
+          sudo apt-get install ghp-import
           make html
       - name: Commit generated webpage files
         run: |
