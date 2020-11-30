@@ -25,16 +25,15 @@ jobs:
           sudo apt-get install pelican
           sudo apt-get install python3-bs4
           make html
+          mv output ../
+          git checkout gh-pages
+          cd ..
+          cp -r output/* nairobilug.or.ke
+          rm -rf output
+          cd nairobilug.or.ke
       - name: Commit generated webpage files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git status
-          git add -f output
-          git checkout gh-pages
-          git checkout master -- output
-          git add *.*
-          git checkout master
-          git rm output
           git commit -m "Update website" || echo "Nothing to commit"
           git push
