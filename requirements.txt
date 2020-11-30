@@ -1,4 +1,4 @@
 ghp-import
 Markdown
 pelican
-bs4 # pelican-bootstrapify
+beautifulsoup4 # pelican-bootstrapify
