@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
         with: 
-             repository: nairobilug/nairobilug.or.ke
+             repository: bkmgit/nairobilug.or.ke
              submodules: recursive
       - name: Build site
         shell: bash
