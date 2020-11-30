@@ -25,6 +25,7 @@ jobs:
           sudo apt-get install pelican
           sudo apt-get install python3-bs4
           ls
+          pydoc modules
           make html
           mv output ../
           git checkout gh-pages
